@@ -1,0 +1,113 @@
+*{
+    /* ### Primary */
+--Blue_100_fondo: hsl(225, 100%, 94%);
+--Blue_700: hsl(245, 75%, 52%);
+/* ### Neutral */
+--Blue_50: hsl(225, 100%, 98%);
+--Gray_600: hsl(224, 23%, 55%);
+--Blue_950: hsl(223, 47%, 23%);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    box-sizing: border-box;    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: var(--Blue_100_fondo);
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    .main{
+        width: 28.09em;
+        height: 43.6em;
+        border-radius: 1.2em;
+        overflow: hidden;
+        text-align: center;
+        background-color:white;
+        .header{
+            width: 100%;
+            height: 13.8em;
+            background-image: url(./images/illustration-hero.svg);
+        }
+        h2{
+            padding-top: 1.51em;
+            font-size: 1.79em;
+            font-weight: 900;
+            color: var(--Blue_950);
+        }
+        .p1{
+            padding: 1.1em 4.1em;
+            font-size: 1.02em;
+            text-align: center;
+            font-weight: 700;
+            line-height: 1.58em;
+            color: var(--Gray_600);
+        }
+        .caja-info{
+            padding: 0 1.35em;
+            width: 22em;
+            height: 6.2em;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsla(225, 100%, 94%, 0.24);
+            border-radius: 0.8em;
+            .caja1{
+                display: flex;
+                justify-content: space-between;
+                gap: 1.34em;
+                img{
+                    border-radius: 100%;
+                    background-color: hsl(225, 100%, 98%);
+                }
+                div{
+                    .p2{
+                        font-size: 1.05em;
+                        color: var(--Gray_950);
+                        font-weight: 900;
+                        padding-bottom: 0.2em;
+                    }
+                    .p3{
+                        color: var(--Gray_600);
+                        font-weight: 500;
+                    }
+                }
+            }
+            a{
+                color: var(--Blue_700);
+                font-weight: 700;
+                font-size: 0.96em;
+                cursor: pointer;
+            
+            }
+        }
+        button{
+            width: 22.1em;
+            margin-top: 1.91em;
+            border: none;
+            border-radius: 0.8em;
+            padding: 1em;
+            font-weight: 700;
+            background-color: var(--Blue_700);
+            color: var(--Blue_50);
+            transition: all 200ms ease;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+        .p4{
+            margin-top: 1.9em;
+            font-size: 0.95em;
+            font-weight: 900;
+            color: var(--Gray_600);
+            cursor: pointer;
+        }
+    }
+}
